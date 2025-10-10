@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import '../services/data_service.dart';
 
 class AdminScreen extends StatefulWidget {
+  const AdminScreen({super.key});
+
   @override
   State<AdminScreen> createState() => _AdminScreenState();
 }
@@ -21,7 +23,7 @@ class _AdminScreenState extends State<AdminScreen> {
                       title: Text("${b['user']} → ${b['venue']}"),
                       subtitle: Text("Capacity: ${b['capacity']} | ${b['price']}"),
                     ))
-                .toList(),
+                ,
             Divider(),
             ListTile(title: Text("Venues", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold))),
             ...ds.venues.keys.map((cat) => ExpansionTile(

@@ -13,6 +13,8 @@ void main() async {
 }
 
 class VenueBookApp extends StatelessWidget {
+  const VenueBookApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

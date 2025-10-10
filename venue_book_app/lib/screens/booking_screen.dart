@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import '../services/data_service.dart';
 
 class BookingScreen extends StatelessWidget {
+  const BookingScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     final venue = ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>;
