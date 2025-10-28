@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 class HomeScreen extends StatelessWidget {
   final List<String> categories = [
     "Resorts",
-    "Restaurants",
+    "Corporate Halls",
     "Banquets",
-    "Beaches",
+    "Marquees",
   ];
 
   HomeScreen({super.key});
@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
                 onTap: () =>
                     Navigator.pushNamed(context, '/category', arguments: cat),
                 child: Card(
-                  color: Colors.teal,
+                  color: const Color.fromARGB(255, 120, 150, 0),
                   child: Center(
                     child: Text(cat, style: TextStyle(fontSize: 20)),
                   ),
